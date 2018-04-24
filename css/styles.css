@@ -9,6 +9,10 @@ html, body {
   margin: 0px 10px 0px 10px;
 }
 
+a {
+   text-decoration: none;
+}
+
 .header {
    max-height: 64px;
 }
