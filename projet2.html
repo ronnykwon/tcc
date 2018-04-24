@@ -34,57 +34,58 @@
       </ul>
    </nav>
 </header>
-<section>
-<h1>
-  Réalisation d'un Site Web à destination des professionnels
-</h1>
+<div class="wrapper">
+  <section>
+  <h1>
+    Réalisation d'un Site Web à destination des professionnels
+  </h1>
 
-<p>
-  Contactez un professionnel afin de réaliser un site de présentation de son activité
-</p>
-<div>
-  <p>Les grandes étapes :</p>
-  <ul>
-    <li>
-      Contact
-    </li>
-    <li>
-      Recueil des besoins
-    </li>
-    <li>
-      Maquette
-    </li>
-    <li>
-      Implémentation
-    </li>
-    <li>
-      Hébergement
-    </li>
-    <li>
-      Livraison
-    </li>
-  </ul>
-</div>
-<p>
-  Date butoir : <strong>22 Juin 2018</strong>
-  <div id="countdown">
-  <div id='tiles'></div>
-  <div class="labels">
-    <li>Jours</li>
-    <li>Heures</li>
-    <li>Mins</li>
-    <li>Secs</li>
+  <p>
+    Contactez un professionnel afin de réaliser un site de présentation de son activité
+  </p>
+  <div>
+    <p>Les grandes étapes :</p>
+    <ul>
+      <li>
+        Contact
+      </li>
+      <li>
+        Recueil des besoins
+      </li>
+      <li>
+        Maquette
+      </li>
+      <li>
+        Implémentation
+      </li>
+      <li>
+        Hébergement
+      </li>
+      <li>
+        Livraison
+      </li>
+    </ul>
   </div>
+  <p>
+    Date butoir : <strong>22 Juin 2018</strong>
+    <div id="countdown">
+    <div id='tiles'></div>
+    <div class="labels">
+      <li>Jours</li>
+      <li>Heures</li>
+      <li>Mins</li>
+      <li>Secs</li>
+    </div>
+  </div>
+    <script>
+      var target_date = new Date('June 22, 2018');
+      var countdown = document.getElementById("tiles"); // get tag element
+      getCountdown(countdown);
+      setInterval(function () { getCountdown(countdown); }, 1000);
+    </script>
+  </p>
+  </section>
 </div>
-  <script>
-    var target_date = new Date('June 22, 2018');
-    var countdown = document.getElementById("tiles"); // get tag element
-    getCountdown(countdown);
-    setInterval(function () { getCountdown(countdown); }, 1000);
-  </script>
-</p>
-</section>
-
 
 <footer class="footer center">
    <figure>
