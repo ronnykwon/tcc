@@ -1,0 +1,127 @@
+   <!DOCTYPE html>
+   <html>
+   <head>
+      <meta charset="UTF8" />
+      <title>Le Web</title>
+      <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+      <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+      <link rel="stylesheet" type="text/css" href="css/hover.css"/>
+
+
+      <!--core first + styles last-->
+      <link href="css/fontawesome/fontawesome.css" rel="stylesheet">
+      <link href="css/fontawesome/fa-brands.css" rel="stylesheet">
+      <link href="css/fontawesome/fa-regular.css" rel="stylesheet">
+      <link href="css/fontawesome/fa-solid.css" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <nav class="topnav">
+            <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="html5.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="js.html">Javascript</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Projets</a>
+              <div class="dropdown-content">
+               <a href="projet1.html">Projet 1</a>
+               <a href="projet2.html">Projet 2</a>
+            </div>
+         </li>
+      </ul>
+   </nav>
+</header>
+   <div class="wrapper">
+   <section class="introduction">
+      <h1>La base</h1>
+      <p>
+         HTML est le langage interprété par les navigateurs.<br/>
+         Il a été créé dans les années 1990 par un chercheur du CERN - Organisation Européenne pour la recherche du nucléaire. (<a href="https://fr.wikipedia.org/wiki/Hypertext_Markup_Language" target="_blank">plus d'info</a>).
+      </p>
+      <p>
+         Un exemple de navigateurs Web :
+         <span>
+            <a href="https://www.google.com/chrome/" target="_blank">
+               <picture>
+                  <img src="asset/icon/chrome.svg" class="brand-mini hvr-bounce-in" title="Chrome"/>
+               </picture>
+            </a>
+         </span>
+         <span>
+            <picture>
+               <img src="asset/icon/firefox.svg" class="brand-mini hvr-bounce-in" title="Firefox"/>
+            </picture>
+         </span>
+         <span>
+            <picture>
+               <img src="asset/icon/ie.svg" class="brand-mini hvr-bounce-in" title="IE"/>
+            </picture>
+         </span>
+      </p>
+   </section>
+   <section>
+      <h2>Le principe</h2>
+
+      <pre>
+         <code>
+
+            &lt;tagname&gt;contenu&lt;/tagname&gt;
+            &lt;tagname/&gt;
+         </code>
+      </pre>
+
+      <h2>Exemple</h2>
+      <pre>
+         <code>
+            &lt;!doctype html&gt;
+            &lt;html&gt;
+               &lt;body&gt;
+                  Ma première Page!
+               &lt;/body&gt;
+            &lt;/html&gt;
+         </code>
+      </pre>
+      <p>
+         Le résultat <a href="sample/firstpage.html" target="_blank">ici</a>.<br/>
+         Version corrigée <a href="sample/firstpage-head.html" target="_blank">là</a> 
+      </p>
+   </section>
+   <section>
+      <h2>Des liens à avoir sous le coude</h2>
+      <ul>
+         <li>
+            <a href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3" target="_blank">Open Class Rooms</a>
+         </li>
+         <li>
+            <a href="https://www.w3schools.com/html/default.asp" target="_blank">W3Schools</a>
+         </li>
+      </ul>
+
+      <br/>
+      <h2>Cheat Sheet</h2>
+      <ul>
+         <li>
+            <a href="asset/html5-cheat-sheet.png" target="_blank">HTML 5 Cheat Sheet</a>
+         </li>
+         <li>
+            <a href="https://makeawebsitehub.com/the-html-5-mega-cheat-sheet/" target="_blank">makeawebsitehub.com</a>
+         </li>
+      </ul>
+      <h2>Des réflexes à avoir!</h2>
+      <ul>
+         <li>
+            <a href="http://bfy.tw/Hnjm" target="_blank">La console de développement!</a>
+         </li>
+      </ul>
+   </section>
+</div>
+
+
+<footer class="footer center">
+   <figure>
+      <img class="footer-img" src="asset/header.jpg"/>
+   </figure>
+</footer>
+</body>
+</html>

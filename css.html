@@ -1,0 +1,133 @@
+   <!DOCTYPE html>
+   <html>
+   <head>
+      <meta charset="UTF8" />
+      <title>Le Web</title>
+      <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+      <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+      <link rel="stylesheet" type="text/css" href="css/hover.css"/>
+
+
+      <!--core first + styles last-->
+      <link href="css/fontawesome/fontawesome.css" rel="stylesheet">
+      <link href="css/fontawesome/fa-brands.css" rel="stylesheet">
+      <link href="css/fontawesome/fa-regular.css" rel="stylesheet">
+      <link href="css/fontawesome/fa-solid.css" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <nav class="topnav">
+            <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="html5.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="js.html">Javascript</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Projets</a>
+              <div class="dropdown-content">
+               <a href="projet1.html">Projet 1</a>
+               <a href="projet2.html">Projet 2</a>
+            </div>
+         </li>
+      </ul>
+   </nav>
+</header>
+
+<div class="wrapper">
+   <div class="center welcome-text">
+      <h1 class="animated fadeIn">Le CSS</h1>
+   </div>
+   <section class="introduction">
+      <h2>A quoi ça sert?</h2>
+      <p>
+         Un aperçu rapide de <a href="index-nocss.html">la page de garde sans CSS</a>
+      </p>
+   </section>
+   <section>
+      <h2>Le principe</h2>
+
+      <pre>
+         <code>
+            tag | class | selecteur {
+               attribut: valeur;
+            }
+         </code>
+      </pre>
+      <p>
+         Le style est écrit dans un fichier portant l'extension <b>.css</b>
+      </p>
+      <h2>Exemple</h2>
+      <pre>
+         asset/css/styles.css
+         <code>
+            body {
+               background: green;
+               color: white;
+            }
+         </code>
+
+         <code>
+            &lt;!doctype html&gt;
+            &lt;html&gt;
+               &lt;head&gt;
+                  &lt;meta charset="UTF8"/&gt;
+                  &lt;link rel="stylesheet" type="text/css" href="asset/css/styles.css"/&gt;
+               &lt;/head&gt;
+
+               &lt;body&gt;
+                  Ma première Page!
+               &lt;/body&gt;
+            &lt;/html&gt;
+         </code>
+      </pre>
+      <p>
+         Le résultat <a href="sample/css-sample.html" target="_blank">ici</a>.<br/>
+      </p>      
+   </section>
+   <section>
+      <h2>Des liens à avoir sous le coude</h2>
+      <ul>
+         <li>
+            <a href="https://openclassrooms.com/courses/apprenez-a-creer-votre-site-web-avec-html5-et-css3/mettre-en-place-le-css" target="_blank">Open Class Rooms</a>
+         </li>
+         <li>
+            <a href="https://www.w3schools.com/css/" target="_blank">W3Schools</a>
+         </li>
+      </ul>
+
+      <br/>
+      <h2>Cheat Sheet</h2>
+      <ul>
+         <li>
+            <a href="asset/css-cheat-sheet.png" target="_blank">CSS Cheat Sheet Image</a>
+         </li>
+         <li>
+            <a href="asset/css-cheat-sheet.pdf" target="_blank">CSS Cheat Sheet PDF</a>
+         </li>
+         <li>
+            <a href="https://websitesetup.org/css3-cheat-sheet/" target="_blank">makeawebsitehub.com</a>
+         </li>
+      </ul>
+      <h2>Des réflexes à avoir!</h2>
+      <ul>
+         <li>
+            <a href="http://bfy.tw/Hnjm" target="_blank">La console de développement!</a>
+         </li>
+      </ul>
+      <h2>Ne réinventez pas la roue!</h2>
+      <ul>
+         <li>Cherchez sur internet!</li>
+         <li>Utilisez des outils déjà existants</li>
+      </ul>
+   </section>
+</div>
+
+
+
+<footer class="footer center">
+   <figure>
+      <img class="footer-img" src="asset/header.jpg"/>
+   </figure>
+</footer>
+</body>
+</html>

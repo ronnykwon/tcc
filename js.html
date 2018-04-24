@@ -1,0 +1,174 @@
+   <!DOCTYPE html>
+   <html>
+   <head>
+      <meta charset="UTF8" />
+      <title>Le Web</title>
+      <link rel="stylesheet" type="text/css" href="css/styles.css"/>
+      <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+      <link rel="stylesheet" type="text/css" href="css/hover.css"/>
+
+
+      <!--core first + styles last-->
+      <link href="css/fontawesome/fontawesome.css" rel="stylesheet">
+      <link href="css/fontawesome/fa-brands.css" rel="stylesheet">
+      <link href="css/fontawesome/fa-regular.css" rel="stylesheet">
+      <link href="css/fontawesome/fa-solid.css" rel="stylesheet">
+   </head>
+   <body>
+      <header>
+         <nav class="topnav">
+            <ul>
+             <li><a href="index.html">Home</a></li>
+             <li><a href="html5.html">HTML</a></li>
+            <li><a href="css.html">CSS</a></li>
+            <li><a href="js.html">Javascript</a></li>
+            <li class="dropdown">
+              <a href="javascript:void(0)" class="dropbtn">Projets</a>
+              <div class="dropdown-content">
+               <a href="projet1.html">Projet 1</a>
+               <a href="projet2.html">Projet 2</a>
+            </div>
+         </li>
+      </ul>
+   </nav>
+</header>
+
+<div class="wrapper">
+   <div class="center welcome-text">
+      <h1 class="animated fadeIn">Le Javascript</h1>
+   </div>
+   <section class="introduction">
+      <h2>A quoi ça sert?</h2>
+      <p>
+         <script>
+            function somme() {   
+               var a = parseInt(document.getElementById('number-a').value);
+               var b = parseInt(document.getElementById('number-b').value);
+               if( isNaN(a) || isNaN(b) ) {
+                  alert('valeurs incorrectes! Veuillez entrer des nombres!');
+                  document.getElementById('number-a').value = 0;
+                  document.getElementById('number-b').value = 0;
+                  return;
+               }
+               document.getElementById('result').innerHTML = 'Résultat : ' + (a+b);
+               document.getElementById('result').classList.add('animate');
+               document.getElementById('result').classList.add('bounceIn');
+
+            }
+         </script>
+         <label for="number-a">
+            Nombre 1
+            <input id="number-a"/>
+         </label>
+         <label for="number-b">
+            Nombre 2
+            <input id="number-b"/>
+         </label>
+         <button type="button" onclick="somme();" style="margin-left: 5px;">Calculer la somme !</button>
+         <div id="result"></div>
+      </p>
+
+      <p>
+         Le javascript est un language de programmation. Il permet d'écrire des scripts pour :
+         <ul>
+            <li>Manipuler le <a href="https://fr.wikipedia.org/wiki/Document_Object_Model" target="_blank">DOM</a></li>
+            <li>Dynamiser les pages</li>
+         </ul> 
+      </p>
+   </section>
+   <section>
+      <h2>Le principe</h2>
+
+      <pre>
+         <code>
+            Il faut apprendre le langage Javascript! :)
+         </code>
+      </pre>
+      <p>
+         Le script est écrit dans un fichier portant l'extension <b>.js</b><br/>
+         Ou bien, le script peut être directement inclus dans le corps HTML.
+      </p>
+      <h2>Exemple</h2>
+      <pre>
+         <code>
+            &lt;!doctype html&gt;
+            &lt;html&gt;
+               &lt;head&gt;
+                  &lt;meta charset="UTF8"/&gt;
+                  &lt;script src="asset/js/script.js"&gt;&lt;/script&gt;
+               &lt;/head&gt;
+
+               &lt;body&gt;
+                  Ma première Page!
+               
+               &lt;script&gt;
+               function somme() {   
+                  var a = parseInt(document.getElementById('number-a').value);
+                  var b = parseInt(document.getElementById('number-b').value);
+                  if( isNaN(a) || isNaN(b) ) {
+                     alert('valeurs incorrectes! Veuillez entrer des nombres!');
+                     document.getElementById('number-a').value = 0;
+                     document.getElementById('number-b').value = 0;   
+                  }
+                  document.getElementById('result').innerHTML = 'Résultat : ' + (a+b);
+                  document.getElementById('result').classList.add('animate');
+                  document.getElementById('result').classList.add('bounceIn');
+
+               }
+               &lt;/script&gt;
+               &lt;input id="number-a"/&gt;
+               &lt;input id="number-b"/&gt;
+               &lt;button type="button" onclick="somme();"&gt;Calculer la somme !&lt;/button&gt;
+               &lt;div id="result"&gt;&lt;/div&gt;
+               
+            &lt;/body&gt;
+            &lt;/html&gt;
+            
+         </code>
+      </pre>
+      <p>
+         Le résultat <a href="sample/js-sample.html" target="_blank">ici</a>.<br/>
+      </p>      
+   </section>
+   <section>
+      <h2>Des liens à avoir sous le coude</h2>
+      <ul>
+         <li>
+            <a href="https://openclassrooms.com/courses/dynamisez-vos-sites-web-avec-javascript" target="_blank">Open Class Rooms</a>
+         </li>
+         <li>
+            <a href="https://www.w3schools.com/js/default.asp" target="_blank">W3Schools</a>
+         </li>
+      </ul>
+
+      <br/>
+      <h2>Cheat Sheet</h2>
+      <ul>
+         <li>
+            <a href="http://htmlcheatsheet.com/js/" target="_blank">htmlcheatsheet.com/js</a>
+         </li>
+      </ul>
+      <h2>Des réflexes à avoir!</h2>
+      <ul>
+         <li>
+            <a href="http://bfy.tw/Hnjm" target="_blank">La console de développement!</a>
+         </li>
+      </ul>
+      <h2>Ne réinventez pas la roue!</h2>
+      <ul>
+         <li>Cherchez sur internet!</li>
+         <li><a href="https://jquery.com/" target="_blank">JQuery à la rescousse</a></li>
+         <li>Utilisez des outils déjà existants</li>
+      </ul>
+   </section>
+</div>
+
+
+
+<footer class="footer center">
+   <figure>
+      <img class="footer-img" src="asset/header.jpg"/>
+   </figure>
+</footer>
+</body>
+</html>
